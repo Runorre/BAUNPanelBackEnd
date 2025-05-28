@@ -10,6 +10,6 @@ mongoose.connection.on('error', () =>
 
 export const connectDb = async(MONGODB_USERNAME : string, MONGODB_PASSWORD : string, MONGODB_URL : string) => {
     let mongoURI = `mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_URL}:27017`;
-    console.log('[Database] Connecting to database..');
+    console.log('[Database] Connecting to database...');
     await mongoose.connect(mongoURI, {dbName: "baun"});
 }
