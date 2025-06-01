@@ -9,6 +9,7 @@ import router from "./routes";
 
 
 import { connectDb } from "./services/MongooseService";
+import { initGridFS } from "./services/gridFs";
 
 
 dotenv.config();
@@ -36,4 +37,5 @@ dotenv.config();
     }
 
     await connectDb(process.env.MONGODB_USERNAME, process.env.MONGODB_PASSWORD, process.env.MONGODB_URL);
+    initGridFS();
 })()
