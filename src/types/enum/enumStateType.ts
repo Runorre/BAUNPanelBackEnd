@@ -7,5 +7,6 @@ export enum StateType {
     JAIL = "Fourrière",
     UNICORN = "Unicorn",
     CLEAN = "À nettoyer",
-    OUT = "Ne pas sortir"
+    OUT = "Ne pas sortir",
+    DEFAULT = "DEFAULT"
 }
